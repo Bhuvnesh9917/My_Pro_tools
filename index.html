@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827">
+<title>MyPro Tools — All-in-One Toolkit</title>
+<style>
+:root{--bg:#0b1020;--panel:#141c31;--panel2:#1b2741;--text:#f4f7ff;--muted:#a8b3c9;--line:#2c3b5b;--accent:#ffd43b;--accentText:#171717;--danger:#ff6577;--green:#54e0a2}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#1a2b4c 0,#0b1020 52%);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.shell{width:min(1200px,94%);margin:auto}.topbar{position:sticky;top:0;z-index:8;background:#0b1020ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{min-height:70px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.logo{font-weight:950;font-size:23px;letter-spacing:-.6px}.logo span{color:var(--accent)}.navlinks{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.navlinks button,.navlinks a{background:transparent;border:0;color:#d9e2f4;padding:10px 12px;border-radius:10px;font-weight:750}.navlinks button:hover,.navlinks a:hover,.navlinks .active{background:#243451;color:var(--accent)}.btn{border:0;border-radius:11px;padding:11px 15px;background:var(--accent);color:var(--accentText);font-weight:900}.btn:hover{filter:brightness(1.06)}.btn.secondary{background:#263752;color:#f4f7ff;border:1px solid #3b4d70}.btn.danger{background:#4a202b;color:#ffdce1;border:1px solid #8d3e4c}.hero{padding:34px 0 25px}.heroBox{border:1px solid #31476e;border-radius:24px;padding:clamp(24px,5vw,48px);background:linear-gradient(110deg,#182b4cfa,#0d1428ed),radial-gradient(circle at 80% 20%,#ffd43b33,transparent 45%);box-shadow:0 20px 55px #0003}.pill{display:inline-block;border:1px solid #ffd43b70;color:var(--accent);background:#ffd43b12;padding:7px 11px;border-radius:30px;font-size:12px;font-weight:900;letter-spacing:.7px}.hero h1{font-size:clamp(31px,6vw,55px);line-height:1.08;margin:17px 0 12px;max-width:760px}.hero p{color:var(--muted);line-height:1.7;max-width:720px}.searchbar{display:flex;gap:10px;max-width:680px;margin-top:20px}.input,.searchbar input,.field input,.field textarea,.field select{width:100%;min-width:0;background:#0b1223;border:1px solid #354765;color:var(--text);border-radius:10px;padding:12px 14px;outline:none}.input:focus,.searchbar input:focus,.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent)}.section{padding:18px 0 30px}.heading{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:18px}.heading h2{margin:0;font-size:clamp(23px,4vw,31px)}.sub{color:var(--muted);line-height:1.6;margin:7px 0 0}.toolgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.toolcard{border:1px solid var(--line);border-radius:17px;background:linear-gradient(150deg,#18243b,#10182b);padding:19px;min-height:180px;display:flex;flex-direction:column;box-shadow:0 12px 25px #0002;transition:transform .18s,border-color .18s}.toolcard:hover{transform:translateY(-3px);border-color:#ffd43b88}.icon{font-size:27px;margin-bottom:13px}.toolcard h3{margin:0 0 7px;font-size:17px}.toolcard p{color:var(--muted);font-size:13px;line-height:1.5;margin:0 0 15px;flex:1}.toolcard .btn{align-self:flex-start}.adslot{border:1px dashed #53627d;border-radius:14px;background:#11192b;text-align:center;padding:17px;color:var(--muted);margin:17px 0}.adslot strong{color:var(--accent);display:block;margin-bottom:5px}.adslot small{font-size:11px}.footer{border-top:1px solid var(--line);margin-top:25px;padding:23px 0;color:var(--muted);font-size:13px}.footrow{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.mutedLink{color:#9baac3}.view{padding:28px 0 45px}.panel{background:#141e34;border:1px solid var(--line);border-radius:18px;padding:22px}.toolbox{max-width:800px;margin:auto}.toolbox h1{font-size:clamp(27px,5vw,40px);margin:10px 0}.toolbox .description{color:var(--muted);line-height:1.7}.toolform{display:grid;gap:13px;margin-top:20px}.field{display:flex;flex-direction:column;gap:7px}.field label{font-size:13px;font-weight:800;color:#dbe5f7}.field textarea{min-height:110px;resize:vertical}.result{display:none;white-space:pre-wrap;overflow-wrap:anywhere;background:#0b1426;border:1px solid #344766;border-radius:12px;padding:15px;line-height:1.6}.actions{display:flex;gap:9px;flex-wrap:wrap}.profilegrid,.adminGrid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.avatar{width:74px;height:74px;border-radius:24px;background:var(--accent);color:#151515;display:grid;place-items:center;font-size:30px;font-weight:900;margin-bottom:14px}.notice{display:none;padding:11px;border-radius:10px;background:#173d34;color:#b9ffe2;margin-bottom:13px}.warn{background:#3b2c16;color:#ffe4a1;border:1px solid #6d562c;padding:13px;border-radius:12px;line-height:1.6;margin:12px 0}.field textarea{min-height:95px}.statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:15px 0}.stat{padding:14px;border-radius:12px;background:#0d1628;border:1px solid var(--line)}.stat b{font-size:23px;display:block;color:var(--accent)}.stat span{color:var(--muted);font-size:12px}.toolrow{display:flex;gap:10px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}.toolrow .grow{flex:1}.toolrow small{color:var(--muted)}.toggle{accent-color:var(--accent);width:18px;height:18px}.modalback{position:fixed;inset:0;background:#020611d9;z-index:20;display:none;place-items:center;padding:18px}.modal{width:min(470px,100%);border:1px solid #3b4e71;background:#121d32;border-radius:20px;padding:24px;box-shadow:0 30px 100px #0008}.modal h2{margin:8px 0}.modal p{color:var(--muted);line-height:1.6}.modalActions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#f4f7ff;color:#101827;padding:12px 16px;border-radius:12px;z-index:30;display:none;font-weight:800;max-width:90%;box-shadow:0 10px 35px #0005}.hide{display:none!important}
+@media(max-width:960px){.toolgrid{grid-template-columns:repeat(3,minmax(0,1fr))}.profilegrid,.adminGrid{grid-template-columns:1fr}}@media(max-width:650px){.toolgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{padding:12px 0}.logo{font-size:20px}.navlinks{gap:2px}.navlinks button,.navlinks a{padding:9px;font-size:13px}.searchbar{flex-direction:column}.searchbar .btn{width:100%}.heading{align-items:flex-start;flex-direction:column}.statgrid{grid-template-columns:1fr 1fr}}@media(max-width:400px){.toolgrid{grid-template-columns:1fr}.toolcard{min-height:150px}}
+</style></head>
+<body><div id="app"></div>
+<div class="modalback" id="adModal" role="dialog" aria-modal="true" aria-labelledby="adTitle"><div class="modal"><span class="pill">SPONSORED PLACEHOLDER</span><h2 id="adTitle">Quick break ✨</h2><p id="adText">Tool use ke baad yahan ad slot dikhaya ja sakta hai. Real ads ke liye approved ad network integration chahiye.</p><div class="adslot"><strong>Advertisement Area</strong><small>This is a demo ad, not a paid advertisement.</small></div><div class="modalActions"><button class="btn secondary" onclick="closeAd(false)">Cancel</button><button class="btn" onclick="closeAd(true)">Continue to Tool</button></div></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const STORE={profile:"mypro_tools_profile_v1",settings:"mypro_tools_settings_v1",notes:"mypro_tools_notes_v1",todos:"mypro_tools_todos_v1",usage:"mypro_tools_usage_v1"};
+const toolDefs=[
+{id:"calculator",name:"Smart Calculator",icon:"🧮",desc:"Basic arithmetic calculations.",group:"Math"},
+{id:"percentage",name:"Percentage Finder",icon:"％",desc:"Find percentage, discount and increase.",group:"Math"},
+{id:"unit",name:"Unit Converter",icon:"📏",desc:"Convert common length and weight units.",group:"Utility"},
+{id:"age",name:"Age Calculator",icon:"🎂",desc:"Calculate your age from date of birth.",group:"Utility"},
+{id:"word",name:"Word Counter",icon:"📝",desc:"Count words, characters and sentences.",group:"Text"},
+{id:"case",name:"Text Case Converter",icon:"🔠",desc:"Uppercase, lowercase and title case.",group:"Text"},
+{id:"reverse",name:"Text Reverser",icon:"🔁",desc:"Reverse text or reverse word order.",group:"Text"},
+{id:"notes",name:"Quick Notes",icon:"📒",desc:"Save private notes in this browser.",group:"Productivity"},
+{id:"todo",name:"To-Do List",icon:"✅",desc:"Keep track of daily tasks.",group:"Productivity"},
+{id:"password",name:"Password Generator",icon:"🔐",desc:"Generate a random password locally.",group:"Security"},
+{id:"bmi",name:"BMI Calculator",icon:"⚖️",desc:"Estimate BMI from height and weight.",group:"Health"},
+{id:"tip",name:"Tip Calculator",icon:"🧾",desc:"Split a bill and calculate tip.",group:"Utility"},
+{id:"color",name:"Color Picker",icon:"🎨",desc:"Pick a color and copy its HEX code.",group:"Design"}
+];
+
+const extraTools = [
+{id:'char_frequency',name:'Character Frequency Counter',icon:'🔡',desc:'Count each character in text.',group:'Text',op:'charfreq'},
+{id:'duplicate_lines',name:'Duplicate Line Remover',icon:'🧹',desc:'Remove repeated lines from text.',group:'Text',op:'dedup'},
+{id:'sort_lines',name:'Line Sorter',icon:'↕️',desc:'Sort lines alphabetically.',group:'Text',op:'sort'},
+{id:'line_number',name:'Line Numbering Tool',icon:'🔢',desc:'Add line numbers to text.',group:'Text',op:'linenumber'},
+{id:'remove_blank',name:'Blank Line Remover',icon:'🧽',desc:'Remove empty lines.',group:'Text',op:'blank'},
+{id:'trim_lines',name:'Trim Lines',icon:'✂️',desc:'Remove extra spaces at line edges.',group:'Text',op:'trimlines'},
+{id:'extra_spaces',name:'Extra Space Cleaner',icon:'🫧',desc:'Collapse repeated spaces.',group:'Text',op:'spaces'},
+{id:'slug',name:'URL Slug Generator',icon:'🔗',desc:'Turn a title into a URL-friendly slug.',group:'Text',op:'slug'},
+{id:'text_to_binary',name:'Text to Binary',icon:'💻',desc:'Convert text into binary bytes.',group:'Developer',op:'binary'},
+{id:'binary_to_text',name:'Binary to Text',icon:'🧠',desc:'Decode binary bytes into text.',group:'Developer',op:'unbinary'},
+{id:'text_to_hex',name:'Text to Hex',icon:'🧩',desc:'Convert text into hexadecimal.',group:'Developer',op:'hex'},
+{id:'hex_to_text',name:'Hex to Text',icon:'🔓',desc:'Decode hexadecimal text.',group:'Developer',op:'unhex'},
+{id:'url_encode',name:'URL Encoder',icon:'🌐',desc:'Encode text for use in URLs.',group:'Developer',op:'urlencode'},
+{id:'url_decode',name:'URL Decoder',icon:'🌍',desc:'Decode URL-encoded text.',group:'Developer',op:'urldecode'},
+{id:'html_escape',name:'HTML Entity Encoder',icon:'🧱',desc:'Escape HTML special characters.',group:'Developer',op:'htmlescape'},
+{id:'html_unescape',name:'HTML Entity Decoder',icon:'🧰',desc:'Decode common HTML entities.',group:'Developer',op:'htmlunescape'},
+{id:'json_format',name:'JSON Formatter',icon:'📦',desc:'Pretty-print valid JSON.',group:'Developer',op:'jsonformat'},
+{id:'json_minify',name:'JSON Minifier',icon:'🗜️',desc:'Compact valid JSON.',group:'Developer',op:'jsonminify'},
+{id:'base64_encode',name:'Base64 Encoder',icon:'🔐',desc:'Encode text to Base64.',group:'Developer',op:'b64encode'},
+{id:'base64_decode',name:'Base64 Decoder',icon:'🔑',desc:'Decode Base64 text.',group:'Developer',op:'b64decode'},
+{id:'binary_count',name:'Binary Digit Counter',icon:'0️⃣',desc:'Count 0s and 1s.',group:'Developer',op:'bincount'},
+{id:'regex_tester',name:'Regex Tester',icon:'🧪',desc:'Test a regular expression against text.',group:'Developer',op:'regex'},
+{id:'markdown_preview',name:'Markdown Quick Preview',icon:'📰',desc:'Convert basic Markdown syntax to plain preview.',group:'Developer',op:'markdown'},
+{id:'csv_to_json',name:'CSV to JSON',icon:'📊',desc:'Convert simple CSV rows to JSON.',group:'Developer',op:'csvjson'},
+{id:'json_to_csv',name:'JSON to CSV',icon:'📈',desc:'Convert array of JSON objects to CSV.',group:'Developer',op:'jsoncsv'},
+{id:'word_frequency',name:'Word Frequency Counter',icon:'📚',desc:'Count most common words.',group:'Text',op:'wordfreq'},
+{id:'reading_time',name:'Reading Time Estimator',icon:'⏱️',desc:'Estimate reading time from text.',group:'Text',op:'readtime'},
+{id:'sentence_case',name:'Sentence Case Converter',icon:'🔤',desc:'Convert text to sentence case.',group:'Text',op:'sentencecase'},
+{id:'alternating_case',name:'aLtErNaTiNg CaSe',icon:'🔀',desc:'Convert text to alternating case.',group:'Text',op:'altcase'},
+{id:'remove_punctuation',name:'Punctuation Remover',icon:'📝',desc:'Remove punctuation marks.',group:'Text',op:'nopunct'},
+{id:'extract_emails',name:'Email Extractor',icon:'📧',desc:'Find email addresses in text.',group:'Text',op:'emails'},
+{id:'extract_urls',name:'URL Extractor',icon:'🔎',desc:'Find web links in text.',group:'Text',op:'urls'},
+{id:'extract_numbers',name:'Number Extractor',icon:'🔢',desc:'Find numbers in text.',group:'Text',op:'numbers'},
+{id:'text_deduper',name:'Repeated Words Remover',icon:'🧼',desc:'Remove repeated words while preserving order.',group:'Text',op:'dedupwords'},
+{id:'prefix_lines',name:'Line Prefixer',icon:'➕',desc:'Add a prefix to each line.',group:'Text',op:'prefix'},
+{id:'suffix_lines',name:'Line Suffixer',icon:'➕',desc:'Add a suffix to each line.',group:'Text',op:'suffix'},
+{id:'wrap_text',name:'Text Wrapper',icon:'📐',desc:'Wrap text to a chosen line width.',group:'Text',op:'wrap'},
+{id:'initials',name:'Initials Generator',icon:'🔠',desc:'Create initials from a name or phrase.',group:'Text',op:'initials'},
+{id:'acronym',name:'Acronym Expander Helper',icon:'🔤',desc:'Create an acronym from the first letters.',group:'Text',op:'acronym'},
+{id:'palindrome',name:'Palindrome Checker',icon:'🪞',desc:'Check if text reads the same backwards.',group:'Text',op:'palindrome'},
+{id:'anagram',name:'Anagram Checker',icon:'🔠',desc:'Check two phrases for anagrams.',group:'Text',op:'anagram'},
+{id:'morse_encode',name:'Morse Code Encoder',icon:'📡',desc:'Convert letters into Morse code.',group:'Text',op:'morse'},
+{id:'morse_decode',name:'Morse Code Decoder',icon:'📻',desc:'Decode supported Morse code.',group:'Text',op:'unmorse'},
+{id:'rot13',name:'ROT13 Encoder/Decoder',icon:'🔄',desc:'Apply ROT13 letter substitution.',group:'Security',op:'rot13'},
+{id:'caesar',name:'Caesar Cipher',icon:'🗝️',desc:'Shift letters using a simple Caesar cipher.',group:'Security',op:'caesar'},
+{id:'random_number',name:'Random Number Generator',icon:'🎲',desc:'Generate random numbers in a range.',group:'Utility',op:'randomnum'},
+{id:'dice',name:'Dice Roller',icon:'🎲',desc:'Roll virtual dice.',group:'Utility',op:'dice'},
+{id:'coin',name:'Coin Flip',icon:'🪙',desc:'Flip a virtual coin.',group:'Utility',op:'coin'},
+{id:'lottery',name:'Random Picker',icon:'🎯',desc:'Pick one random item from a list.',group:'Utility',op:'pick'},
+{id:'list_shuffle',name:'List Shuffler',icon:'🔀',desc:'Shuffle lines randomly.',group:'Utility',op:'shuffle'},
+{id:'list_sample',name:'Random List Sample',icon:'🎯',desc:'Pick a sample of items from lines.',group:'Utility',op:'sample'},
+{id:'countdown_days',name:'Days Between Dates',icon:'📅',desc:'Calculate days between two dates.',group:'Date & Time',op:'days'},
+{id:'weekday',name:'Weekday Finder',icon:'🗓️',desc:'Find the weekday for a date.',group:'Date & Time',op:'weekday'},
+{id:'unix_time',name:'Unix Timestamp Converter',icon:'⌚',desc:'Convert Unix timestamp to readable date.',group:'Date & Time',op:'unix'},
+{id:'date_add',name:'Date Calculator',icon:'➕',desc:'Add or subtract days from a date.',group:'Date & Time',op:'dateadd'},
+{id:'time_convert',name:'Hours to Minutes Converter',icon:'🕒',desc:'Convert hours, minutes and seconds.',group:'Date & Time',op:'timeconvert'},
+{id:'compound_interest',name:'Compound Interest Calculator',icon:'💹',desc:'Estimate compound growth.',group:'Finance',op:'compound'},
+{id:'simple_interest',name:'Simple Interest Calculator',icon:'💰',desc:'Calculate simple interest.',group:'Finance',op:'simpleinterest'},
+{id:'profit_loss',name:'Profit & Loss Calculator',icon:'📉',desc:'Calculate profit or loss percentage.',group:'Finance',op:'profitloss'},
+{id:'discount',name:'Discount Calculator',icon:'🏷️',desc:'Calculate sale price after discount.',group:'Finance',op:'discount'},
+{id:'tax',name:'Tax Calculator',icon:'🧾',desc:'Add or remove a percentage tax.',group:'Finance',op:'tax'},
+{id:'markup',name:'Markup Calculator',icon:'📈',desc:'Calculate selling price from cost and markup.',group:'Finance',op:'markup'},
+{id:'loan_payment',name:'Loan Payment Estimator',icon:'🏦',desc:'Estimate monthly loan payment.',group:'Finance',op:'loan'},
+{id:'savings_goal',name:'Savings Goal Planner',icon:'🐷',desc:'Estimate time to reach a savings target.',group:'Finance',op:'savings'},
+{id:'average',name:'Average Calculator',icon:'➗',desc:'Calculate mean, median and range.',group:'Math',op:'stats'},
+{id:'median',name:'Median Finder',icon:'📊',desc:'Find the median of numbers.',group:'Math',op:'median'},
+{id:'prime_checker',name:'Prime Number Checker',icon:'🔢',desc:'Check whether a number is prime.',group:'Math',op:'prime'},
+{id:'factorial',name:'Factorial Calculator',icon:'❗',desc:'Calculate factorial for a small integer.',group:'Math',op:'factorial'},
+{id:'gcd_lcm',name:'GCD & LCM Calculator',icon:'🧮',desc:'Find greatest common divisor and least common multiple.',group:'Math',op:'gcdlcm'},
+{id:'fraction_decimal',name:'Fraction to Decimal',icon:'🍰',desc:'Convert a fraction to decimal.',group:'Math',op:'fraction'},
+{id:'decimal_fraction',name:'Decimal to Fraction (simple)',icon:'🥧',desc:'Approximate a decimal as a fraction.',group:'Math',op:'decfrac'},
+{id:'ratio_simplifier',name:'Ratio Simplifier',icon:'⚖️',desc:'Simplify a two-number ratio.',group:'Math',op:'ratio'},
+{id:'power_root',name:'Power & Square Root',icon:'√️',desc:'Calculate powers and square roots.',group:'Math',op:'power'},
+{id:'random_password_pin',name:'PIN Generator',icon:'🔢',desc:'Generate a numeric PIN.',group:'Security',op:'pin'},
+{id:'passphrase',name:'Passphrase Generator',icon:'🛡️',desc:'Create a memorable random passphrase.',group:'Security',op:'passphrase'},
+{id:'strength_hint',name:'Password Strength Checker',icon:'🔐',desc:'Give a local password strength estimate.',group:'Security',op:'strength'},
+{id:'uuid',name:'UUID Generator',icon:'🆔',desc:'Generate a random UUID.',group:'Developer',op:'uuid'},
+{id:'timestamp_now',name:'Current Timestamp',icon:'⏳',desc:'Show current date and Unix timestamp.',group:'Date & Time',op:'now'},
+{id:'rgb_hex',name:'RGB to HEX Converter',icon:'🎨',desc:'Convert RGB values to HEX color.',group:'Design',op:'rgbhex'},
+{id:'hex_rgb',name:'HEX to RGB Converter',icon:'🌈',desc:'Convert HEX color to RGB.',group:'Design',op:'hexrgb'},
+{id:'contrast',name:'Color Contrast Checker',icon:'◐',desc:'Estimate contrast ratio for two HEX colors.',group:'Design',op:'contrast'},
+{id:'gradient_css',name:'CSS Gradient Generator',icon:'🖌️',desc:'Create CSS linear-gradient code.',group:'Design',op:'gradient'},
+{id:'box_shadow',name:'CSS Box Shadow Generator',icon:'🪟',desc:'Create a CSS box-shadow snippet.',group:'Design',op:'shadow'},
+{id:'border_radius',name:'CSS Border Radius Generator',icon:'⬜',desc:'Create a CSS border-radius snippet.',group:'Design',op:'radius'},
+{id:'lorem',name:'Lorem Ipsum Generator',icon:'📄',desc:'Generate placeholder text.',group:'Writing',op:'lorem'},
+{id:'bio_helper',name:'Short Bio Formatter',icon:'👤',desc:'Format a short bio from supplied text.',group:'Writing',op:'bio'},
+{id:'hashtag',name:'Hashtag Generator',icon:'#️⃣',desc:'Turn keywords into hashtags.',group:'Social Media',op:'hashtags'},
+{id:'caption_cleaner',name:'Caption Formatter',icon:'✨',desc:'Clean line breaks and whitespace in a caption.',group:'Social Media',op:'caption'},
+{id:'meta_description',name:'Meta Description Counter',icon:'🔍',desc:'Check SEO description charac
